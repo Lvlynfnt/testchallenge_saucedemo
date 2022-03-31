@@ -1,0 +1,13 @@
+{
+    "testFiles": "**/*.{feature,features}",
+    "env": {
+        "usedENV": "prod",
+        "prod": "https://www.saucedemo.com",
+        "stage": "",
+        "qa": "",
+        "dev": ""
+    },
+    "watchForFileChanges": false,
+    "reporter": "cypress-multi-reporters",
+    "chromeWebSecurity": false
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "description": "I want to log in to Saucedemo.com Webapp",
+    "keyword": "Feature",
+    "name": "Saucedemo.com Test Scenarios",
+    "line": 1,
+    "id": "saucedemo.com-test-scenarios",
+    "tags": [],
+    "uri": "login_newspaper.feature",
+    "elements": [
+      {
+        "id": "saucedemo.com-test-scenarios;tc001---verify-if-user-can-log-in-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "TC001 - Verify if User can log in with valid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User access the Saucedemo Webapp",
+            "result": {
+              "status": "passed",
+              "duration": 199000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "pw"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User enters valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 775000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "User able to sign in successfully",
+            "result": {
+              "status": "passed",
+              "duration": 108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "User log out",
+            "result": {
+              "status": "passed",
+              "duration": 386000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saucedemo.com-test-scenarios;tc002---verify-if-user-can-log-in-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "TC002 - Verify if User can log in with invalid credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "User access the Saucedemo Webapp",
+            "result": {
+              "status": "passed",
+              "duration": 116000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "pw",
+                      "message"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "locked_out_user",
+                      "secret_sauce",
+                      "Epic sadface: Sorry, this user has been locked out."
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 16,
+            "name": "User enters invalid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 734000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saucedemo.com-test-scenarios;tc003---verify-if-user-can-add-all-products-in-the-cart",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "TC003 - Verify if User can add all products in the Cart",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "User access the Saucedemo Webapp",
+            "result": {
+              "status": "passed",
+              "duration": 133000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "pw"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 23,
+            "name": "User enters valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 719000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "User add to cart all products available",
+            "result": {
+              "status": "passed",
+              "duration": 546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "User view Cart",
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "Verify if all item descriptions display correct details on Your Cart page",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saucedemo.com-test-scenarios;tc004---verify-if-user-can-add-random-single-item-in-the-cart",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "TC004 - Verify if User can add random single item in the Cart",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "User access the Saucedemo Webapp",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "pw"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User enters valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 674000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "User add random single item",
+            "result": {
+              "status": "passed",
+              "duration": 152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "User view Cart",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "Verify if the single item description displays correct details on Your Cart page",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "saucedemo.com-test-scenarios;tc005---verify-if-user-can-check-out-and-place-his-order-successfully",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "TC005 - Verify if User can check out and place his order successfully",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "User access the Saucedemo Webapp",
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "pw"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 42,
+            "name": "User enters valid credentials",
+            "result": {
+              "status": "passed",
+              "duration": 675000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "User add to cart all products available",
+            "result": {
+              "status": "passed",
+              "duration": 530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "User view Cart",
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "User check out",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "User enters Check out Information details",
+            "result": {
+              "status": "passed",
+              "duration": 812000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "Verify if Checkout Overview details are corect",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Verify if Amount computation are correct",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "User successfully made the order",
+            "result": {
+              "status": "passed",
+              "duration": 93000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "User go back to the Home page",
+            "result": {
+              "status": "passed",
+              "duration": 88000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
